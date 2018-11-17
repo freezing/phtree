@@ -72,7 +72,7 @@ inline vector<unsigned long> getNextLineTokens(ifstream& stream, unsigned long d
 	stringstream lineStream(line);
 	string cell;
 	vector<unsigned long> tokens;
-	const long double decimalShift = pow10(decimals);
+	const long double decimalShift = pow(10.0, decimals);
 
 	while (getline(lineStream, cell, ' ')) {
 		// TODO added a shift
